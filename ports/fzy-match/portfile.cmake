@@ -3,7 +3,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO turbubestia/fzy-match
     REF 8b51c89f35358b408dd064a4cd8734788233ba3a
-    SHA512 0
+    SHA512 0d0a0bd49f7fbbe0901ad1f8f9354b8523d4430859d022aaea6a65d7b1fa664086caf9e09e7d6551f20b90c55cfe79edcd2ee6e1a3d637c51ca2cb65dd09056f
     HEAD_REF main
 )
 
