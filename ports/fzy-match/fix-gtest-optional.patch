@@ -1,0 +1,17 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -12,14 +12,16 @@
+ # Add custom CMake module path
+ list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+ 
+ # Library dependencies
+-find_package(GTest CONFIG REQUIRED)
+ find_package(fzy REQUIRED)
+ 
+ # Source folders
+ add_subdirectory(src)
+ 
+-# Test configuration
+-include(CTest)
+-enable_testing()
+-add_subdirectory(tests)

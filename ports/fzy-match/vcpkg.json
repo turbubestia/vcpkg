@@ -1,0 +1,11 @@
+{
+  "name": "fzy-match",
+  "version": "0.1.0",
+  "description": "A C++ library wrapper of the popular fuzzy text selector for the terminal.",
+  "homepage": "https://github.com/turbubestia/fzy-match",
+  "license": "MIT",
+  "dependencies": [
+    "vcpkg-cmake",
+    "vcpkg-cmake-config"
+  ]
+}
