@@ -2,9 +2,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO turbubestia/fzy-match
-    REF "main"
+    # REF "main"
     # Set to 0 initially so vcpkg calculates the actual SHA512 hash for you
-    HEAD_REF "main"
+    # HEAD_REF "main"
 )
 
 vcpkg_apply_patch(
