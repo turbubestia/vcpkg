@@ -11,13 +11,15 @@ vcpkg_from_github(
 # 2. Configure CMake build
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS
+        -DBUILD_TESTING=OFF
 )
 
 # 3. Build and install into vcpkg sandbox
 vcpkg_cmake_install()
 
 # 4. Fix up target exports and CMake config locations
-vcpkg_cmake_config_fixup(PACKAGE_NAME fzy_match)
+vcpkg_cmake_config_fixup(PACKAGE_NAME fzy_match CONFIG_PATH lib/turbubestia/cmake)
 
 # 5. Copy license file to share/fzy-match/copyright
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
